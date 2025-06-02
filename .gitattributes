@@ -1,0 +1,9 @@
+# Use LF line endings for PHP and configuration files
+*.php text eol=lf
+*.json text eol=lf
+*.lock text eol=lf
+*.env text eol=lf
+*.sh text eol=lf
+
+# Use native line endings for everything else
+* text=auto
