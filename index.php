@@ -19,7 +19,7 @@ function generateLeonardoImage($apiKey, $prompt) {
 
     $response = $client->post('generations', [
         'json' => [
-            'modelId' => 'b2614463-296c-462a-9586-aafdb8f00e36',
+            'modelId' => 'de7d3faf-762f-48e0-b3b7-9d0ac3a3fcf3',
             'contrast' => 3.5,
             'prompt' => $prompt,
             'num_images' => 4,
@@ -77,5 +77,5 @@ function generateLeonardoImage($apiKey, $prompt) {
 }
 
 $apiKey = $_ENV['LEONARDO_API_KEY'];
-$prompt = 'cybersecurity environment with many network elements';
+$prompt = 'A government cybersecurity operations room seen at eye level with soft, directional lighting. Military and civilian personnel collaborate before displays showing threat detection systems and protected network visualizations. An analyst in uniform gestures toward a dashboard. A senior officer studies tablet intel, while a comms expert types with focus. Badge readers, document folders, and reinforced walls convey control. The room features government seals, security zones, and clearance indicators. Palette: navy blues, reds, authoritative grays. Natural depth of field.';
 generateLeonardoImage($apiKey, $prompt);
